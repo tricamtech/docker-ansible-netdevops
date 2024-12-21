@@ -24,14 +24,7 @@ RUN pip install pip --upgrade
 RUN pip install ansible && \
     pip install ansible-pylibssh
 RUN ansible-galaxy collection install cisco.aci; \
-    ansible-galaxy collection install cisco.cml; \
     ansible-galaxy collection install cisco.dcnm; \
-    ansible-galaxy collection install cisco.intersight; \
-    ansible-galaxy collection install cisco.ios; \
-    ansible-galaxy collection install cisco.fmcansible; \
-    ansible-galaxy collection install cisco.mso; \
-    ansible-galaxy collection install cisco.nd; \
-    ansible-galaxy collection install cisco.nxos; \
-    ansible-galaxy collection install cisco.ucs
+    ansible-galaxy collection install community.ciscosmb
 
 WORKDIR /home
